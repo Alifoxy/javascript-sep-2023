@@ -22,8 +22,8 @@ let book1 = {
 console.log(book1);
 
 let book2 = {
-    title: 'Forgotten Place' ,
-    pageCount: 330,
+    title: 'Dark Valley' ,
+    pageCount: 466,
     genre: 'horror'
 }
 console.log(book2);
@@ -66,4 +66,27 @@ let book6 = {
     ]
 }
 console.log(book6.authors);
+
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+let user =[
+    {name:'Vasyl',username:'vasilisk555',password:345598},
+    {name:'Anna',username:'alana369',password:375267},
+    {name:'Grigorii',username:'greg16',password:531445},
+    {name:'Dmytro',username:'dimix225',password:782565},
+    {name:'Sofia',username:'safita1920',password:344565},
+    {name:'Mihailo',username:'misha369',password:781363},
+    {name:'Victoria',username:'viki675',password:423678},
+    {name:'Maria',username:'ria28',password:786243},
+    {name:'Oleg',username:'lego98',password:245678},
+    {name:'Sergiy',username:'grey067',password:698054},
+]
+console.log(user[0].password);
+console.log(user[1].password);
+console.log(user[2].password);
+console.log(user[3].password);
+console.log(user[4].password);
+console.log(user[5].password);
+console.log(user[6].password);
+console.log(user[7].password);
+console.log(user[8].password);
+console.log(user[9].password);
