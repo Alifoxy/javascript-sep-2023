@@ -12,6 +12,7 @@ console.log(animals[6]);
 console.log(animals[7]);
 console.log(animals[8]);
 console.log(animals[9]);
+
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
 let book1 = {
