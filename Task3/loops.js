@@ -34,7 +34,7 @@ let animals = [
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
-// let x = 0;
+let x = 0;
 let products_list = [
     {name:"apple",quantity:5},
     {name:"chocolate bar",quantity:3},
@@ -59,7 +59,7 @@ let products_list = [
 ]
 // while (x < products_list.length) {
 //         let product_item = products_list[x];
-//         document.write(`${i}: ${product_item.name} - ${product_item.quantity}</h1>`);
+//         document.write(`<h1>${x}: ${product_item.name} - ${product_item.quantity}</h1>`);
 //         x++;
 //     }
 
