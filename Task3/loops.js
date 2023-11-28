@@ -7,18 +7,18 @@ for (let i = 0; i < 10; i++) {
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-// let animals = [
-//     {name:"tiger",quantity:2},
-//     {name:"deer",quantity:5},
-//     {name:"elephant",quantity:2},
-//     {name:"red panda",quantity:7},
-//     {name:"lion",quantity:4},
-//     {name:"zebra",quantity:4},
-//     {name:"polar bear",quantity:1},
-//     {name:"penguin",quantity:6},
-//     {name:"wolf",quantity:5},
-//     {name:"giraffe",quantity:2}
-// ]
+let animals = [
+    {name:"tiger",quantity:2},
+    {name:"deer",quantity:5},
+    {name:"elephant",quantity:2},
+    {name:"red panda",quantity:7},
+    {name:"lion",quantity:4},
+    {name:"zebra",quantity:4},
+    {name:"polar bear",quantity:1},
+    {name:"penguin",quantity:6},
+    {name:"wolf",quantity:5},
+    {name:"giraffe",quantity:2}
+]
 // for (let animal of animals) {
 //     document.write(`<div>${animal.name} - ${animal.quantity}</div>`);
 // }
@@ -35,28 +35,28 @@ for (let i = 0; i < 10; i++) {
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
 // let x = 0;
-// let products_list = [
-//     {name:"apple",quantity:5},
-//     {name:"chocolate bar",quantity:3},
-//     {name:"cake",quantity:1},
-//     {name:"yogurt",quantity:2},
-//     {name:"bag of flour",quantity:1},
-//     {name:"loaf of bread",quantity:2},
-//     {name:"lemon",quantity:3},
-//     {name:"cucumber",quantity:3},
-//     {name:"bottle of juice",quantity:2},
-//     {name:"tomato",quantity:5},
-//     {name:"bottle of soy sauce",quantity:1},
-//     {name:"pack of butter",quantity:2},
-//     {name:"bottle of milk",quantity:2},
-//     {name:"carrot",quantity:5},
-//     {name:"bottle of ketchup",quantity:1},
-//     {name:"orange",quantity:2},
-//     {name:"bottle of mustard",quantity:1},
-//     {name:"pack of waffles",quantity:2},
-//     {name:"bottle of red wine",quantity:1},
-//     {name:"melon",quantity:1}
-// ]
+let products_list = [
+    {name:"apple",quantity:5},
+    {name:"chocolate bar",quantity:3},
+    {name:"cake",quantity:1},
+    {name:"yogurt",quantity:2},
+    {name:"bag of flour",quantity:1},
+    {name:"loaf of bread",quantity:2},
+    {name:"lemon",quantity:3},
+    {name:"cucumber",quantity:3},
+    {name:"bottle of juice",quantity:2},
+    {name:"tomato",quantity:5},
+    {name:"bottle of soy sauce",quantity:1},
+    {name:"pack of butter",quantity:2},
+    {name:"bottle of milk",quantity:2},
+    {name:"carrot",quantity:5},
+    {name:"bottle of ketchup",quantity:1},
+    {name:"orange",quantity:2},
+    {name:"bottle of mustard",quantity:1},
+    {name:"pack of waffles",quantity:2},
+    {name:"bottle of red wine",quantity:1},
+    {name:"melon",quantity:1}
+]
 // while (x < products_list.length) {
 //         let product_item = products_list[x];
 //         document.write(`<h1>${product_item.name} - ${product_item.quantity}</h1>`);
@@ -67,10 +67,10 @@ for (let i = 0; i < 10; i++) {
 // побудувати структуру по шаблону
 // Масив:
 
-let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-for (let item of listOfItems) {
-    document.write(`<li>${item}</li>`);
-}
+// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+// for (let item of listOfItems) {
+//     document.write(`<li>${item}</li>`);
+// }
 //
 // ШАБЛОН:
 //     <ul>
@@ -98,28 +98,28 @@ for (let item of listOfItems) {
 // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 
 
-// let products = [
-//     {
-//         title: 'milk',
-//         price: 22,
-//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
-//     },
-//     {
-//         title: 'juice',
-//         price: 27,
-//         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
-//     },
-//     {
-//         title: 'tomato',
-//         price: 47,
-//         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
-//     },
-//     {
-//         title: 'tea',
-//         price: 15,
-//         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
-//     },
-// ];
+let products = [
+    {
+        title: 'milk',
+        price: 22,
+        image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    },
+    {
+        title: 'juice',
+        price: 27,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    },
+    {
+        title: 'tomato',
+        price: 47,
+        image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    },
+    {
+        title: 'tea',
+        price: 15,
+        image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    },
+];
 // for (let i = 0; i < products.length; i++) {
 //     const product_card = products[i];
 //     document.write(`<div class="product-card">
@@ -147,7 +147,7 @@ let users = [
 
 // for (let i = 0; i < users.length; i++) {
 //     let user = users[i]
-//         if (user.status === true) {
+//         if (user.status) {
 //             document.write(`<div>status of ${user.name} is true</div>`);
 //         }
 // }
@@ -155,7 +155,7 @@ let users = [
 // - користувачів зі статусом false
 
 // for (user of users) {
-//     if (user.status !== true) {
+//     if (!user.status) {
 //         document.write(`<div>status of ${user.name} is false</div>`);
 //     }
 // }
