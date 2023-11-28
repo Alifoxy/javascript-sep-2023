@@ -19,8 +19,8 @@ let animals = [
     {name:"wolf",quantity:5},
     {name:"giraffe",quantity:2}
 ]
-// for (let animal of animals) {
-//     document.write(`<div>${animal.name} - ${animal.quantity}</div>`);
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div>${i}: ${animal.name} - ${animal.quantity}</div>`);
 // }
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
@@ -59,7 +59,7 @@ let products_list = [
 ]
 // while (x < products_list.length) {
 //         let product_item = products_list[x];
-//         document.write(`<h1>${product_item.name} - ${product_item.quantity}</h1>`);
+//         document.write(`${i}: ${product_item.name} - ${product_item.quantity}</h1>`);
 //         x++;
 //     }
 
