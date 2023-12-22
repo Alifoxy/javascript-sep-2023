@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 2px coral solid;
+            border-radius: 10px;
+            background: lemonchiffon;
+        }
+
+        .wrapper {
+            width: 300px;
+            padding: 10px;
+        }
+
+        .item {
+            margin-top: 10px;
+            border: 2px teal solid;
+            border-radius: 10px;
+            background: skyblue;
+        }
+        .button {
+            width: 200px;
+            height: 35px;
+            background: lightskyblue;
+            border-radius: 10px;
+            border: 2px dodgerblue solid ;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: 2px coral solid;
+        }
+    </style>
+</head>
+<body>
+<div id="count"></div>
+<form action="" name="f1" class="form">
+    <label>
+        <input type="text" placeholder="name" name="userName">
+    </label>
+    <label>
+        <input type="text" placeholder="surname" name="userSurname">
+    </label>
+    <label>
+        <input type="number" placeholder="age" name="userAge">
+    </label>
+    <div>
+        <button id="submit" class="button">Submit</button>
+    </div>
+</form>
+<script src="main.js"></script>
+</body>
+</html>

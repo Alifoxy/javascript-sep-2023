@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            border: 2px coral solid;
+            border-radius: 10px;
+            background: lemonchiffon;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .right {
+            margin-top: 10px;
+            border: 2px forestgreen solid;
+            border-radius: 10px;
+            background: palegreen;
+        }
+        .wrong {
+            margin-top: 10px;
+            border: 2px crimson solid;
+            border-radius: 10px;
+            background: lightcoral;
+        }
+        .button {
+            width: 200px;
+            height: 35px;
+            background: lightskyblue;
+            border-radius: 10px;
+            border: 2px dodgerblue solid ;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: 2px coral solid;
+        }
+    </style>
+</head>
+<body>
+<form name="age_checker" class="form">
+    <label>Age:
+        <input type="number" name="age">
+    </label>
+    <button class="button">check age</button>
+</form>
+
+<script src="main.js"></script>
+</body>
+</html>

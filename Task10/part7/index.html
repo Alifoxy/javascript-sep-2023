@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 350px;
+            height: 200px;
+            padding: 10px;
+            border: 2px coral solid;
+            border-radius: 10px;
+            background: lemonchiffon;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button_div {
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            width: 200px;
+            height: 35px;
+            background: lightskyblue;
+            border-radius: 10px;
+            border: 2px dodgerblue solid ;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: 2px coral solid;
+        }
+        table, td {
+            margin-top: 10px;
+            border: 2px forestgreen solid;
+            border-radius: 10px;
+            background: palegreen;
+        }
+    </style>
+</head>
+<body>
+<form name="table_creator" class="form">
+    <div>
+        <label class="flex">Rows:<input type="number" min="0" name="row"></label>
+        <br/>
+        <label class="flex">Columns:<input type="number" min="0" name="column"></label>
+        <br/>
+        <label class="flex">Content:<input type="text" name="content"></label>
+        <br/>
+    </div>
+    <div class="button_div">
+        <button class="button">Create table</button>
+    </div>
+
+</form>
+
+<div id="result"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
