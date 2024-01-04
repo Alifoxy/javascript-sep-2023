@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            width: 350px;
+            padding: 5px;
+            border: 2px teal solid;
+            border-radius: 10px;
+            background: skyblue;
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const foo = async () => {
+        let url = new URL(location.href);
+        let id = url.searchParams.get('id');
+        console.log(id);
+        console.log(JSON.parse(id));
+        const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        const user = await res.json();
+        console.log(user)
+        let box = document.createElement('div')
+        document.body.appendChild(box)
+            let user_id = document.createElement('h3');
+            let name = document.createElement('h3');
+            let username = document.createElement('h3');
+            let email = document.createElement('h3');
+            let phone = document.createElement('h3');
+            let address = document.createElement('h3');
+            let company = document.createElement('h3');
+            let adr = document.createElement('ul');
+            let cmp = document.createElement('ul');
+                for (const adr_key in user.address){
+                        let li1 = document.createElement('li');
+                        li1.innerText = `${JSON.stringify(user.address[adr_key])}`;
+                        adr.appendChild(li1);
+
+                }
+
+                for (const comp_key in user.company){
+                        let li2 = document.createElement('li');
+                        li2.innerText = `${JSON.stringify(user.company[comp_key])}`;
+                        cmp.appendChild(li2);
+                }
+            user_id.innerText = `${user.id}`;
+            name.innerText = `${user.name}`;
+            username.innerText = `${user.username}`;
+            email.innerText = `${user.email}`;
+            phone.innerText = `${user.phone}`;
+            address.innerText = 'Address:';
+            company.innerText = 'Company:';
+            address.append(adr);
+            company.append(cmp);
+
+
+            box.append(user_id,name,username,email,phone,address,company)
+            box.classList.add('item');
+    }
+    void foo();
+</script>
+</body>
+</html>

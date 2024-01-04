@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            width: 300px;
+            padding: 5px;
+            border: 2px teal solid;
+            border-radius: 10px;
+            background: skyblue;
+        }
+        .btn {
+            width: 200px;
+            height: 40px;
+            background: cornflowerblue;
+            border-radius: 10px;
+            border: 2px royalblue solid ;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    // зробити файл users.html
+    // з ендпоінту http://jsonplaceholder.typicode.com/users отримати всіх користувачів
+    //     вивести їх id + name списком та додати посилання з href = user-details.html?id=XXX (замість ХХХ - айді юзера)
+    // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів) отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX   ХХХ - айді користувача)
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(value => value.json())
+        .then(value => {
+
+            for (const user of value) {
+                let button = document.createElement('button');
+                let h2 = document.createElement('h2');
+                let item = document.createElement('div');
+                h2.innerText = `${user.id} - ${user.name}`;
+                button.innerText = 'show user info';
+                button.onclick = function () {
+                    location.href = `user-details.html?id=${user.id}`;
+                }
+                button.style.display = 'block';
+                button.classList.add('btn');
+
+                item.append(h2, button)
+                item.classList.add('item');
+                document.body.appendChild(item);
+
+            }
+
+
+        });
+</script>
+</body>
+</html>
